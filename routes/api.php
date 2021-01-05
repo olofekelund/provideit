@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AddressController;
+use App\Http\Controllers\PodcastController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,4 @@ use App\Http\Controllers\AddressController;
 
 Route::post('/address/autocomplete', [AddressController::class, 'autocomplete']);
 Route::post('/address/createRoute', [AddressController::class, 'createRoute']);
+Route::post('/podcast/search', [PodcastController::class, 'search']);
